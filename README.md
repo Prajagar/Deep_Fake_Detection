@@ -78,9 +78,8 @@ A Recurrent Neural Network (RNN) is a type of neural network designed for sequen
 
 ### RNN Architecture
 
-RNNs process sequences by maintaining a hidden state that captures information about previous elements in the sequence. This hidden state is updated at each time step, allowing the network to learn temporal dependencies and contextual information": 
-
-![image](https://www.researchgate.net/publication/349426498/figure/fig7/AS:992815353982978@1613717034357/Recurrent-neural-networks-a-Schematic-of-the-RNN-architecture-used-showing-the-input.png)
+RNNs process sequences by maintaining a hidden state that captures information about previous elements in the sequence. This hidden state is updated at each time step, allowing the network to learn temporal dependencies and contextual information"
+![image](https://assets-global.website-files.com/5d7b77b063a9066d83e1209c/60d242974bcba9f8c670e03e_Group%20806.jpg)
 
 ### Long Short-Term Memory (LSTM)
 
@@ -129,7 +128,7 @@ This results in a total dataset of 3000 Real and 3000 Fake videos, providing a c
 
 Before running any scripts, make sure you have prepared your dataset as described in the [Dataset](#dataset) section.
 
-## Model Training
+## Training
 
 To train the CNN-RNN model on your dataset, you need to execute the training script:
 
@@ -162,8 +161,9 @@ Make sure to replace `path_to_model` and `path_to_data` with the actual paths to
 
 ## Graph of Accuracy and loss
 
-<img src="./1.png"></img><img src="./2.png"></img> 
-<img src="./3.png"></img>
+<img src="././Images/1.png" alt="Image 1" width="30%" /> <img src="./Images/2.png" alt="Image 2" width="30%" /> <img src="./Images/3.png" alt="Image 3" width="30%" />
+
+
 
 ---
 
