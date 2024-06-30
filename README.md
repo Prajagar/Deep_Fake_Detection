@@ -79,6 +79,7 @@ A Recurrent Neural Network (RNN) is a type of neural network designed for sequen
 ### RNN Architecture
 
 RNNs process sequences by maintaining a hidden state that captures information about previous elements in the sequence. This hidden state is updated at each time step, allowing the network to learn temporal dependencies and contextual information": 
+
 ![image](https://www.researchgate.net/publication/349426498/figure/fig7/AS:992815353982978@1613717034357/Recurrent-neural-networks-a-Schematic-of-the-RNN-architecture-used-showing-the-input.png)
 
 ### Long Short-Term Memory (LSTM)
