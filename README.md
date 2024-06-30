@@ -104,7 +104,7 @@ To use this project, you need to set up a Python environment and install the req
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/deepfake-detection-system.git
+    git clone https://github.com/Prajagar/Deep_Fake_Detection.git
     cd deepfake-detection-system
     ```
 
