@@ -130,32 +130,20 @@ Before running any scripts, make sure you have prepared your dataset as describe
 
 ## Training
 
-To train the CNN-RNN model on your dataset, you need to execute the training script:
-
-    ```sh
-    python <a href="./Model.ipynb">`Model.ipynb`</a>
-    ```
+To train the CNN-RNN model on your dataset, you need to execute the training script: <a href="./Model.ipynb">`Model.ipynb`</a>
 
 You can customize the training parameters, such as batch size, learning rate, and number of epochs, in the configuration file.
 
 ## Testing
 
-To test the trained model, run the evaluation script:
-
-    ```sh
-    python <a href="./Predict.ipynb">`Predict.ipynb`</a>
-    ```
+To test the trained model, run the evaluation script: <a href="./Predict.ipynb">`Predict.ipynb`</a>
 
 Make sure to replace `path_to_model` and `path_to_data` with the actual paths to your model and dataset.
 Trained model [Download Deepfake Model](https://drive.google.com/file/d/1Bce5WJzmvt15V5hEmAqyNNQL3MIi7Sh5/view?usp=drive_link)
 
 ## Front End
 
-To run the webpage:
-
-    ```sh
-    python <a href="./app.py">`app.py`</a>
-    ```
+To run the webpage: <a href="./app.py">`app.py`</a>
 
 Make sure to replace `path_to_model` and `path_to_data` with the actual paths to your model and dataset in <a href="./model.py">`model.py`</a>.
 
