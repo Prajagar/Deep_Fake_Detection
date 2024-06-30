@@ -1,0 +1,82 @@
+import numpy as np
+import gym
+import spaces
+
+class GridWorldEnvironment(gym.Env):
+    def __init__(self):
+        self.grid_size = 10
+        self.observation_space = gym.spaces.Discrete(self.grid_size)
+        self.action_space = gym.spaces.Discrete(4)  # 4 possible actions: Up, Down, Left, Right
+        self.agent_position = np.array([0, 0])
+        self.goal_position = np.array([self.grid_size - 1, self.grid_size - 1])
+        self.max_steps = 100
+        self.current_step = 0
+
+    def reset(self):
+        self.agent_position = np.array([0, 0])
+        self.current_step = 0
+        return self.agent_position
+
+    def step(self, action):
+        self.current_step += 1
+        if action == 0:  # Up
+            self.agent_position[0] = max(0, self.agent_position[0] - 1)
+        elif action == 1:  # Down
+            self.agent_position[0] = min(self.grid_size - 1, self.agent_position[0] + 1)
+        elif action == 2:  # Left
+            self.agent_position[1] = max(0, self.agent_position[1] - 1)
+        elif action == 3:  # Right
+            self.agent_position[1] = min(self.grid_size - 1, self.agent_position[1] + 1)
+
+        done = np.array_equal(self.agent_position, self.goal_position)
+        reward = -1 if not done else 0  # -1 for each step, 0 upon reaching the goal
+
+        if self.current_step >= self.max_steps:
+            done = True
+
+        return self.agent_position, reward, done, {}
+
+    def render(self):
+        grid = np.zeros((self.grid_size, self.grid_size))
+        grid[self.agent_position[0], self.agent_position[1]] = 1
+        grid[self.goal_position[0], self.goal_position[1]] = 0.5
+        print(grid)
+
+# Q-learning algorithm
+def q_learning(env, learning_rate=0.1, discount_factor=0.9, exploration_prob=0.1, num_episodes=1000):
+    q_table = np.zeros((env.grid_size, env.grid_size, env.action_space.n))
+
+    for episode in range(num_episodes):
+        state = env.reset()
+        done = False
+
+        while not done:
+            if np.random.rand() < exploration_prob:
+                action = env.action_space.sample()  # Explore
+            else:
+                action = np.argmax(q_table[state[0], state[1]])
+
+            next_state, reward, done, _ = env.step(action)
+
+            # Q-value update
+            q_table[state[0], state[1], action] = (1 - learning_rate) * q_table[state[0], state[1], action] + \
+                                                  learning_rate * (reward + discount_factor * np.max(q_table[next_state[0], next_state[1]]))
+
+            state = next_state
+
+    return q_table
+
+# Main
+env = GridWorldEnvironment()
+q_table = q_learning(env)
+
+# Test the trained agent
+state = env.reset()
+env.render()
+
+while True:
+    action = np.argmax(q_table[state[0], state[1]])
+    state, _, done, _ = env.step(action)
+    env.render()
+    if done:
+        break
