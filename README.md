@@ -27,8 +27,7 @@ A Convolutional Neural Network (CNN) is a type of deep learning architecture spe
 
 ### CNN Architecture
 
-A typical CNN architecture consists of several layers that work together to learn and extract features from images. The primary layers in a CNN include:
-<img src="https://editor.analyticsvidhya.com/uploads/90650dnn2.jpeg"> </img>
+A typical CNN architecture consists of several layers that work together to learn and extract features from images. The primary layers in a CNN include: <img src="https://editor.analyticsvidhya.com/uploads/90650dnn2.jpeg"> </img>
 #### 1. Convolutional Layers
 
 Convolutional layers are the core building blocks of a CNN. These layers apply convolution operations to the input image using learnable filters (also known as kernels). The convolution operation involves sliding the filters over the input image, computing element-wise multiplications, and summing the results to produce feature maps. These feature maps capture different patterns, textures, and structures present in the input image.
@@ -58,7 +57,7 @@ ResNet, short for Residual Network, introduced residual connections to address t
 
 ### Enhancements in Res-Next
 
-Res-Next further enhances the ResNet architecture by introducing a cardinality parameter, which controls the number of independent paths in each residual block. This enhancement increases the model's capacity to capture diverse features by promoting feature diversity and reducing information bottlenecks.<img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*tH9evuOFqk8F41FG.png"> </img>
+Res-Next further enhances the ResNet architecture by introducing a cardinality parameter, which controls the number of independent paths in each residual block. This enhancement increases the model's capacity to capture diverse features by promoting feature diversity and reducing information bottlenecks. <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/0*tH9evuOFqk8F41FG.png"> </img>
 
 ### Feature Extraction Capabilities
 
