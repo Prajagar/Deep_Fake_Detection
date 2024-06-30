@@ -1,4 +1,4 @@
-# DeepFake Detection System
+![image](https://github.com/Prajagar/Deep_Fake_Detection/assets/84316947/29663f0d-34f3-40b9-855e-28c54b8e3623)# DeepFake Detection System
 
 ## Overview
 
@@ -79,10 +79,9 @@ A Recurrent Neural Network (RNN) is a type of neural network designed for sequen
 ### RNN Architecture
 
 RNNs process sequences by maintaining a hidden state that captures information about previous elements in the sequence. This hidden state is updated at each time step, allowing the network to learn temporal dependencies and contextual information": <img src="https://www.researchgate.net/publication/349426498/figure/fig7/AS:992815353982978@1613717034357/Recurrent-neural-networks-a-Schematic-of-the-RNN-architecture-used-showing-the-input.png"> </img>
-
 ### Long Short-Term Memory (LSTM)
 
-LSTM is a specific type of RNN architecture designed to overcome the limitations of traditional RNNs in learning long-term dependencies. Key features include memory cells that retain information over extended sequences and gate mechanisms (input, forget, and output gates) that control the flow of information through the network. <img src="https://www.researchgate.net/publication/344229502/figure/fig2/AS:987060122963968@1612344880032/Basic-Long-Short-Term-Memory-LSTM-architecture.ppm](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png"> </img>
+LSTM is a specific type of RNN architecture designed to overcome the limitations of traditional RNNs in learning long-term dependencies. Key features include memory cells that retain information over extended sequences and gate mechanisms (input, forget, and output gates) that control the flow of information through the network. <img src="https://www.researchgate.net/publication/344229502/figure/fig2/AS:987060122963968@1612344880032/Basic-Long-Short-Term-Memory-LSTM-architecture.ppm"> </img>
 
 ### Applications in Video Analysis
 
