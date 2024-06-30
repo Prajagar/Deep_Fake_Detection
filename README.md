@@ -83,7 +83,7 @@ RNNs process sequences by maintaining a hidden state that captures information a
 ### Long Short-Term Memory (LSTM)
 
 LSTM is a specific type of RNN architecture designed to overcome the limitations of traditional RNNs in learning long-term dependencies. Key features include memory cells that retain information over extended sequences and gate mechanisms (input, forget, and output gates) that control the flow of information through the network.
-<img src="https://www.researchgate.net/publication/344229502/figure/fig2/AS:987060122963968@1612344880032/Basic-Long-Short-Term-Memory-LSTM-architecture.ppm"> </img>
+<img src="[https://www.researchgate.net/publication/344229502/figure/fig2/AS:987060122963968@1612344880032/Basic-Long-Short-Term-Memory-LSTM-architecture.ppm](https://colah.github.io/posts/2015-08-Understanding-LSTMs/img/LSTM3-chain.png)"> </img>
 
 ### Applications in Video Analysis
 
