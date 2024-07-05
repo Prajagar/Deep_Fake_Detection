@@ -139,7 +139,7 @@ You can customize the training parameters, such as batch size, learning rate, an
 To test the trained model, run the evaluation script: <a href="./Back End/Predict.ipynb">`Predict.ipynb`</a>
 
 Make sure to replace `path_to_model` and `path_to_data` with the actual paths to your model and dataset.
-Trained model [Download Deepfake Model](https://drive.google.com/file/d/1Bce5WJzmvt15V5hEmAqyNNQL3MIi7Sh5/view?usp=drive_link)
+Trained model [Download Deepfake Model](https://drive.google.com/file/d/1Bce5WJzmvt15V5hEmAqyNNQL3MIi7Sh5/view?usp=sharing)
 
 ## Front End
 
